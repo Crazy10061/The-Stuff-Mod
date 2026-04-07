@@ -1,0 +1,29 @@
+{
+  "display": {
+    "title": {
+      "text": "The Stuff Mod",
+      "color": "white"
+    },
+    "description": {
+      "text": "Stuff Mod"
+    },
+    "icon": {
+      "item": "stuff:stuff_icon"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "jeff": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "jeff"
+    ]
+  ]
+}

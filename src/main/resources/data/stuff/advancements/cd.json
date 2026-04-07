@@ -1,0 +1,55 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:music_disc_13"
+    },
+    "title": "CD Creator",
+    "description": "Craft A CD",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "stuff:root",
+  "criteria": {
+    "jeff": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "stuff:cd",
+        "ingredients": [
+          {
+            "items": [
+              "minecraft:iron_ingot",
+              "minecraft:music_disc_11"
+            ]
+          }
+        ]
+      }
+    },
+    "j": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "slots": {
+          "occupied": 1
+        },
+        "items": [
+          {
+            "items": [
+              "stuff:cd"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "jeff",
+      "j"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  },
+  "sends_telemetry_event": true
+}

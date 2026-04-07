@@ -1,0 +1,40 @@
+{
+  "parent": "stuff:root",
+  "display": {
+    "title": {
+      "text": "King Of Cocoa"
+    },
+    "description": {
+      "text": "Consume Hot Chocolate"
+    },
+    "icon": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "j": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "count": {
+            "min": 1,
+            "max": 1
+          },
+          "item": "stuff:hot"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "j"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  }
+}

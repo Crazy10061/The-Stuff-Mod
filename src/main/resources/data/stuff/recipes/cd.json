@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stuff",
+  "category": "misc",
+  "pattern": [
+    " i ",
+    "imi",
+    " i "
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "m": {
+      "item": "minecraft:music_disc_11"
+    }
+  },
+  "result": {
+    "item": "stuff:cd",
+    "count": 1
+  },
+  "show_notification": true
+}

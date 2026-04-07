@@ -1,0 +1,57 @@
+{
+  "display": {
+    "icon": {
+      "item": "stuff:cola"
+    },
+    "title": "Sweet Tooth",
+    "description": "Make Some Soda",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "stuff:root",
+  "criteria": {
+    "jeff": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "stuff:cola",
+        "ingredients": [
+          {
+            "items": [
+              "minecraft:water_bucket",
+              "minecraft:sugar"
+            ]
+          }
+        ]
+      }
+    },
+    "j": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "slots": {
+          "occupied": 1
+        },
+        "items": [
+          {
+            "items": [
+              "stuff:cola"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "jeff",
+      "j"
+    ]
+  ],
+  "rewards": {
+    "loot": [],
+    "recipes": [],
+    "experience": 10
+  },
+  "sends_telemetry_event": true
+}
